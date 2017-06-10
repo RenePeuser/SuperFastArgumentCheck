@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperFastArgumentCheckTest"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperFastArgumentCheck", "..\SuperFastArgumentCheck\SuperFastArgumentCheck.csproj", "{9C9755E9-DD46-4DDE-9D8E-044EDE9BAA3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperFastArgumentCheckApp", "SuperFastArgumentCheckApp\SuperFastArgumentCheckApp.csproj", "{D2953588-14CC-495F-80C5-9C5108AEE1C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9C9755E9-DD46-4DDE-9D8E-044EDE9BAA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C9755E9-DD46-4DDE-9D8E-044EDE9BAA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C9755E9-DD46-4DDE-9D8E-044EDE9BAA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2953588-14CC-495F-80C5-9C5108AEE1C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2953588-14CC-495F-80C5-9C5108AEE1C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2953588-14CC-495F-80C5-9C5108AEE1C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2953588-14CC-495F-80C5-9C5108AEE1C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

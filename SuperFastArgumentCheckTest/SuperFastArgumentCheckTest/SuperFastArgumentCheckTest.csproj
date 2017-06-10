@@ -31,7 +31,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -48,13 +48,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExceptionHelper.cs" />
     <Compile Include="SpeedTest.cs" />
     <Compile Include="ExpectTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestClassExpected.cs" />
+    <Compile Include="TestClassExpressionCompile.cs" />
     <Compile Include="TestClassExpressionWithout.cs" />
     <Compile Include="TestClassExtended.cs" />
-    <Compile Include="TestClassExpressionCompile.cs" />
     <Compile Include="TestClassStandard.cs" />
   </ItemGroup>
   <ItemGroup>

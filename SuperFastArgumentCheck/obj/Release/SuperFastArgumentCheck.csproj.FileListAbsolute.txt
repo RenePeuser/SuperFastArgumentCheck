@@ -1,0 +1,4 @@
+D:\GitHub\SuperFastArgumentCheck\SuperFastArgumentCheck\bin\Release\SuperFastArgumentCheck.dll
+D:\GitHub\SuperFastArgumentCheck\SuperFastArgumentCheck\bin\Release\SuperFastArgumentCheck.pdb
+D:\GitHub\SuperFastArgumentCheck\SuperFastArgumentCheck\obj\Release\SuperFastArgumentCheck.dll
+D:\GitHub\SuperFastArgumentCheck\SuperFastArgumentCheck\obj\Release\SuperFastArgumentCheck.pdb

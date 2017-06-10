@@ -21,7 +21,7 @@ namespace SuperFastArgumentCheckTest
         {
             for (int i = 0; i < counter; i++)
             {
-                var result = new TestClassStandard(i.ToString());
+                var result = new TestClassExpected(i.ToString());
             }
         }
 
@@ -31,6 +31,24 @@ namespace SuperFastArgumentCheckTest
             for (int i = 0; i < counter; i++)
             {
                 var result = new TestClassExtended(i.ToString());
+            }
+        }
+
+        [TestMethod]
+        public void InterateExpressionCompile()
+        {
+            for (int i = 0; i < counter; i++)
+            {
+                var result = new TestClassExpressionCompile(i.ToString());
+            }
+        }
+
+        [TestMethod]
+        public void InterateExpressionWithoutCompile()
+        {
+            for (int i = 0; i < counter; i++)
+            {
+                var result = new TestClassExpressionWithout(i.ToString());
             }
         }
     }

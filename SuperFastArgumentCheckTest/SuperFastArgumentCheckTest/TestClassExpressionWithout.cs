@@ -1,6 +1,7 @@
 using System;
 using System.Configuration;
 using System.Linq.Expressions;
+using System.Reflection;
 
 namespace SuperFastArgumentCheckTest
 {
@@ -11,20 +12,23 @@ namespace SuperFastArgumentCheckTest
         public TestClassExpressionWithout(string name)
         {
             IsNull(() => name);
+
             Name = name;
         }
 
         private static void IsNull(Expression<Func<object>> argumentExpression)
         {
-            var memberExpression = (MemberExpression)argumentExpression.Body;
-            
+            var memberSelector = (MemberExpression)argumentExpression.Body;
+            var constantSelector = (ConstantExpression)memberSelector.Expression;
+            object value = ((FieldInfo)memberSelector.Member)
+                .GetValue(constantSelector.Value);
 
-            var compiledExpression = argumentExpression.Compile();
-            var argumentValue = compiledExpression();
-            if (argumentValue == null)
+            if (value == null)
             {
-                throw new ArgumentNullException(memberExpression.Member.Name);
+                string name = ((MemberExpression)argumentExpression.Body).Member.Name;
+                throw new ArgumentNullException(name);
             }
+
         }
     }
 }
