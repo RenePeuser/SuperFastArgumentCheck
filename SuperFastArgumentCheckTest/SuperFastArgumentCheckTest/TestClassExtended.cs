@@ -8,7 +8,7 @@ namespace SuperFastArgumentCheckTest
 
         public TestClassExtended(string name)
         {
-            Name = Expect.NotNull(name);
+            Name = name.NotNull();
         }
     }
 }

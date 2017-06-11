@@ -31,11 +31,12 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -49,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExceptionHelper.cs" />
+    <Compile Include="ExpectedExceptionWithArgument.cs" />
     <Compile Include="SpeedTest.cs" />
     <Compile Include="ExpectTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,6 +59,7 @@
     <Compile Include="TestClassExpressionWithout.cs" />
     <Compile Include="TestClassExtended.cs" />
     <Compile Include="TestClassStandard.cs" />
+    <Compile Include="UtfHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
