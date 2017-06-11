@@ -9,10 +9,10 @@ namespace SuperFastArgumentCheckTest
     {
         [TestMethod]
         [ExpectedArgumentException(typeof(ArgumentNullException), "name")]
-        [MethodImpl(MethodImplOptions.NoOptimization | MethodImplOptions.NoInlining)]
+        [MethodImpl(MethodImplOptions.NoOptimization)]
         public void If_Argument_Is_Null_Then_Argument_Null_Exception_Has_To_Be_Thrown()
         {
-            var testClassExpected = new TestClassExpected(null);
+            new TestClassExpected(null);
         }
     }
 }
