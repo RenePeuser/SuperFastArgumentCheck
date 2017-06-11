@@ -19,7 +19,7 @@ namespace SuperFastArgumentCheck
                 var parameter = frame.GetMethod().GetParameters().FirstOrDefault();
                 if (parameter == null)
                 {
-                    throw new ArgumentNullException(nameof(parameter));
+                    throw new ArgumentException("Check code optimization settings, no parameter info is existing.");
                 }
                 throw new ArgumentNullException(parameter.Name);
             }
