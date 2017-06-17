@@ -61,13 +61,13 @@ namespace SuperFastArgumentCheckTest
         }
 
         [TestMethod]
-        public void If_Arg_1_Is_Empty_Then_Argument_Null_Exception_Has_To_Be_Thrown()
+        public void If_Arg_1_Is_Empty_Then_Argument_Exception_Has_To_Be_Thrown()
         {
             ExceptionHelper.Throws<ArgumentException>(() => new ArgumentTestClass(new object(), string.Empty, "c", 2), "name");
         }
 
         [TestMethod]
-        public void If_Arg_1_Is_Whitespace_Then_Argument_Null_Exception_Has_To_Be_Thrown()
+        public void If_Arg_1_Is_Whitespace_Then_Argument_Exception_Has_To_Be_Thrown()
         {
             ExceptionHelper.Throws<ArgumentException>(() => new ArgumentTestClass(new object(), string.Empty, " ", 2), "name");
         }
@@ -79,19 +79,19 @@ namespace SuperFastArgumentCheckTest
         }
 
         [TestMethod]
-        public void If_Arg_2_Is_Empty_Then_Argument_Null_Exception_Has_To_Be_Thrown()
+        public void If_Arg_2_Is_Empty_Then_Argument_Exception_Has_To_Be_Thrown()
         {
             ExceptionHelper.Throws<ArgumentException>(() => new ArgumentTestClass(new object(), "b", string.Empty, 3), "something");
         }
 
         [TestMethod]
-        public void If_Arg_2_Is_Whitespace_Then_Argument_Null_Exception_Has_To_Be_Thrown()
+        public void If_Arg_2_Is_Whitespace_Then_Argument_Exception_Has_To_Be_Thrown()
         {
             ExceptionHelper.Throws<ArgumentException>(() => new ArgumentTestClass(new object(), "b", " ", 3), "something");
         }
 
         [TestMethod]
-        public void If_Arg_3_Is_Out_Of_Range_Then_Argument_Null_Exception_Has_To_Be_Thrown()
+        public void If_Arg_3_Is_Out_Of_Range_Then_Argument_Exception_Has_To_Be_Thrown()
         {
             ExceptionHelper.Throws<ArgumentException>(() => new ArgumentTestClass(new object(), "b", "g", 3), "age");
         }
