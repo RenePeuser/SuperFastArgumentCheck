@@ -54,10 +54,13 @@
     <Compile Include="SpeedTest.cs" />
     <Compile Include="ExpectTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestClassExpected.cs" />
+    <Compile Include="TestClassFuncAndReturn.cs" />
+    <Compile Include="TestClassFunc.cs" />
+    <Compile Include="TestClassAnonym.cs" />
+    <Compile Include="TestClassExpectedOnlyOneArgument.cs" />
     <Compile Include="TestClassExpressionCompile.cs" />
     <Compile Include="TestClassExpressionWithout.cs" />
-    <Compile Include="TestClassExtended.cs" />
+    <Compile Include="TestClassOnlyOneArgument.cs" />
     <Compile Include="TestClassStandard.cs" />
     <Compile Include="UtfHelper.cs" />
   </ItemGroup>

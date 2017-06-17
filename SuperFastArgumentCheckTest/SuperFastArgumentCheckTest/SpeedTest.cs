@@ -22,7 +22,7 @@ namespace SuperFastArgumentCheckTest
         {
             for (int i = 0; i < counter; i++)
             {
-                var result = new TestClassExpected(i.ToString());
+                var result = new TestClassExpectedOnlyOneArgument(i.ToString());
             }
         }
 
@@ -31,7 +31,7 @@ namespace SuperFastArgumentCheckTest
         {
             for (int i = 0; i < counter; i++)
             {
-                var result = new TestClassExtended(i.ToString());
+                var result = new TestClassOnlyOneArgument(i.ToString());
             }
         }
 
@@ -50,6 +50,33 @@ namespace SuperFastArgumentCheckTest
             for (int i = 0; i < counter; i++)
             {
                 var result = new TestClassExpressionWithout(i.ToString());
+            }
+        }
+
+        [TestMethod]
+        public void InterateWithAnonymType()
+        {
+            for (int i = 0; i < counter; i++)
+            {
+                var result = new TestClassAnonym(i.ToString());
+            }
+        }
+
+        //[TestMethod]
+        //public void IterateWithFunc()
+        //{
+        //    for (int i = 0; i < counter; i++)
+        //    {
+        //        var result = new TestClassFunc(i.ToString());
+        //    }
+        //}
+
+        [TestMethod]
+        public void IterateWithFuncAndReturn()
+        {
+            for (int i = 0; i < counter; i++)
+            {
+                var result = new TestClassFuncAndReturn(i.ToString());
             }
         }
     }

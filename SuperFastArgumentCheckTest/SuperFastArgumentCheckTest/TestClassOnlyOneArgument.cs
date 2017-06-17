@@ -2,13 +2,13 @@ using SuperFastArgumentCheck;
 
 namespace SuperFastArgumentCheckTest
 {
-    public class TestClassExtended
+    public class TestClassOnlyOneArgument
     {
         public string Name { get; }
 
-        public TestClassExtended(string name)
+        public TestClassOnlyOneArgument(string name)
         {
-            Name = name.NotNull();
+            Name = name.NotNullOneParam();
         }
     }
 }

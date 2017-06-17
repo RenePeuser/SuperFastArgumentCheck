@@ -2,13 +2,13 @@ using SuperFastArgumentCheck;
 
 namespace SuperFastArgumentCheckTest
 {
-    public class TestClassExpected
+    public class TestClassExpectedOnlyOneArgument
     {
         public string Name { get; }
 
-        public TestClassExpected(string name)
+        public TestClassExpectedOnlyOneArgument(string name)
         {
-            Expect.NotNull(name);
+            Expect.NotNullOneParam(name);
 
             Name = name;
         }
