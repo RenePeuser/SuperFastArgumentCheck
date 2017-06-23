@@ -62,14 +62,15 @@ namespace SuperFastArgumentCheckTest
             }
         }
 
-        //[TestMethod]
-        //public void IterateWithFunc()
-        //{
-        //    for (int i = 0; i < counter; i++)
-        //    {
-        //        var result = new TestClassFunc(i.ToString());
-        //    }
-        //}
+        [TestMethod]
+        public void IterateWithFunc()
+        {
+            for (int i = 0; i < counter; i++)
+            {
+                var value = i.ToString();
+                var result = new TestClassFunc(value, value, value, value);
+            }
+        }
 
         [TestMethod]
         public void IterateWithFuncAndReturn()

@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace SuperFastArgumentCheckTest
@@ -29,9 +26,9 @@ namespace SuperFastArgumentCheckTest
                 }
                 catch
                 {
-                    str = string.Format((IFormatProvider)CultureInfo.CurrentCulture, FrameworkMessages.UTF_FailedToGetExceptionMessage, (object)exception.GetType());
+                    str = string.Format(CultureInfo.CurrentCulture, FrameworkMessages.UTF_FailedToGetExceptionMessage, exception.GetType());
                 }
-                stringBuilder.Append(string.Format((IFormatProvider)CultureInfo.CurrentCulture, "{0}{1}: {2}", (object)(flag ? string.Empty : " ---> "), (object)exception.GetType(), (object)str));
+                stringBuilder.Append(string.Format(CultureInfo.CurrentCulture, "{0}{1}: {2}", flag ? string.Empty : " ---> ", exception.GetType(), str));
                 flag = false;
             }
             return stringBuilder.ToString();
